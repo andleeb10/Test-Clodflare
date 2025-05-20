@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini E-Commerce Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My E-Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Featured Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 1" />
+        <h3>Product 1</h3>
+        <p>$10</p>
+        <button onclick="addToCart('Product 1')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 2" />
+        <h3>Product 2</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My E-Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
